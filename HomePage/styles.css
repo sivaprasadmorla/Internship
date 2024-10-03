@@ -296,7 +296,10 @@
 .image-container {
     position: relative;
     display: inline-block;
+    
+    
 }
+
 
 .image-container img{
     width: 400px;
@@ -304,7 +307,10 @@
     border:1px solid black;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
-
+    transition: transform 1s;
+}
+.image-container :hover {
+    transform: translateY(-10px);
 }
 .image-container h2 {
     position: absolute;
@@ -313,6 +319,10 @@
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+}
+.image-container h2:hover{
+    transform: translate(0px);
+
 }
 
 @media (max-width: 740px) {
@@ -454,6 +464,10 @@
     background: linear-gradient(to bottom,rgba(213, 219, 219, 0.658),rgba(60, 230, 210, 0.5));
     position: relative;
     border-radius: 10px;
+    transition: 1s;
+}
+.blog:hover{
+    transform: scale(1.1) ;
 }
 .blog h4{
     font-size: 15px;

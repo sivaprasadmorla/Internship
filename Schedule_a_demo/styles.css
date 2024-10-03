@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home{
+    background-image: url("./Images/Home-BackGround.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 130vh;
+
+}
+.navbar{
+    height: 50px;
+    
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0px 0px 3px green;
+    background-color: rgba(255, 255,255, 0.2);
+   
+}
+.logo{
+    margin: 0 20px;
+}
+.navlinks {
+  
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navlinks a{
+    text-decoration: none;
+    color: black;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#demobtn{
+    margin: 0 20px;
+    padding: 5px 10px ;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 740px) {
+   
+
+    .home{
+        width: 100vw;
+        height: auto;
+        background-image: url("./Images/Home-BackGround.png") ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    }
+    .logo{
+        margin: 0 5px;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .navbar img{
+        width: 140px;
+        height: 70px;
+    }
+    .navlinks, .DemoBtn {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #fff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .navbar.active .navlinks,
+    .navbar.active .DemoBtn {
+        display: flex;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+.main-text{
+    margin: 40px 0px 0px 100px;
+}
+.main-text h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+.main-text i{
+    font-size: 30px;
+}
+.main-text p{
+    font-size: 15px;
+}
+
+@media(max-width:740px){
+    .main-text{
+        margin: 10px 0px 0px 40px;
+    }
+    .main-text h1{
+        font-size: 20px;
+        
+    }
+    .main-text i{
+        font-size: 20px;
+    }
+    .main-text p{
+        font-size: 10px;
+    }
+}
+
+/* ------------------------------------------ */
+
+.infoForm{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.411);
+    height: auto;
+    width: 30vw;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.infoForm p{
+    font-size: 10px;
+}
+.infoForm label{
+    font-size: 15px;
+    font-weight: 100;
+}
+.infoForm input ,.infoForm textarea{
+    width: 29vw;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.411);
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    border-radius: 5px;
+
+}
+input{
+    font-size: 15px;
+    padding: 5px;
+    
+}
+
+input::placeholder{
+    font-size: 12px;
+}
+button{
+    margin-left: 260px;
+    padding: 2px 20px;
+    font-size: 15px;
+}
+
+ 
