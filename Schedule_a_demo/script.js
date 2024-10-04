@@ -1,3 +1,14 @@
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const navbar = document.querySelector('.navbar');
+
+hamburgerMenu.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
+
+
+// --------------------------------------------------------------------------
+
+
 const monthYearElement =document.getElementById('monthYear');
 const datesElement =document.getElementById('dates');
 const prevBtnElement =document.getElementById('prevBtn');
